@@ -10,7 +10,7 @@ const styles = css`
   }
 `;
 
-class BannoNavigation extends routeMixin(LitElement) {
+class AppNavigation extends routeMixin(LitElement) {
 
   static get styles() {
     return [styles];
@@ -24,12 +24,12 @@ class BannoNavigation extends routeMixin(LitElement) {
   render() {
     return html`
       <div>
-        Welcome to the Banno navigation
+        App Navigation
         <slot></slot>
       </div>
     `;
   }
 }
 
-customElements.define('banno-navigation', BannoNavigation);
-export default BannoNavigation;
+customElements.define('app-navigation', AppNavigation);
+export default AppNavigation;

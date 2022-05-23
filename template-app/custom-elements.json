@@ -2,7 +2,7 @@
   "version": 2,
   "tags": [
     {
-      "name": "banno-enterprise",
+      "name": "template-app",
       "description": "An application with a title and an action counter",
       "properties": [
         {

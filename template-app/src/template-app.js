@@ -3,7 +3,7 @@ import appRouteTree from './js/routing/routes/route-tree.js';
 import Router from '@jack-henry/web-component-router';
 import routeMixin from '@jack-henry/web-component-router/routing-mixin';
 
-class BannoEnterprise extends routeMixin(LitElement) {
+class TemplateApp extends routeMixin(LitElement) {
   static get properties() {
     return {
     };
@@ -22,7 +22,7 @@ class BannoEnterprise extends routeMixin(LitElement) {
         max-width: 960px;
         margin: 0 auto;
         text-align: center;
-        background-color: var(--banno-enterprise-background-color);
+        /*background-color: var(--banno-enterprise-background-color);*/
       }
 
       main {
@@ -54,12 +54,12 @@ class BannoEnterprise extends routeMixin(LitElement) {
   render() {
     return html`
       <main>
-        Welcome to BannoEnterprise
+        Welcome to MainApp
         <slot></slot>
       </main>
     `;
   }
 }
 
-export default BannoEnterprise;
-customElements.define('banno-enterprise', BannoEnterprise);
+export default TemplateApp;
+customElements.define('template-app', TemplateApp);

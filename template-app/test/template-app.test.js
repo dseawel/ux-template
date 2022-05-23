@@ -1,11 +1,11 @@
 import { html, fixture, expect } from '@open-wc/testing';
 
-import '../src/banno-enterprise.js';
+import '../src/template-app.js';
 
-describe('BannoEnterprise', () => {
+describe('TemplateApp', () => {
   let element;
   beforeEach(async () => {
-    element = await fixture(html`<banno-enterprise></banno-enterprise>`);
+    element = await fixture(html`<template-app></template-app>`);
   });
 
   it('renders a h1', () => {

@@ -19,5 +19,3 @@ node_modules
 /_site/
 /dist/
 /out-tsc/
-
-storybook-static
